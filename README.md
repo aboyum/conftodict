@@ -91,7 +91,7 @@ True
 ```
 
 
-### Another example:
+### Another example, printing interface description:
 
 ```python
 from conftodict import ConfToDict
@@ -108,4 +108,16 @@ for k,v in config.items():
         for i in v:
             if "escription" in i:
                 print(i)
+
+
+interface TenGigabitEthernet1/1/8
+description Uplink
+interface FortyGigabitEthernet1/1/1
+interface FortyGigabitEthernet1/1/2
+interface TwentyFiveGigE1/1/1
+interface TwentyFiveGigE1/1/2
+interface AppGigabitEthernet1/0/1
+interface Vlan1
+interface Vlan520
+description reserve
 ```
