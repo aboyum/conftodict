@@ -93,17 +93,19 @@ True
 
 ### Another example:
 
+```python
 from conftodict import ConfToDict
 from configaudit import search_keys, search_values
 
-# Create a config dictionary
+#Create a config dictionary
 c = ConfToDict('filename.cfg', from_file=True)
 config = c.to_dict()
 
-# print(config)
+#print(config)
 for k,v in config.items():
     if "nterface" in k:
         print(k)
         for i in v:
             if "escription" in i:
                 print(i)
+```
